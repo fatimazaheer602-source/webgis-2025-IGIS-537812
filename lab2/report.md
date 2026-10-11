@@ -5,21 +5,7 @@
 **Reg no:** 537812  
 **Subject:** WebGIS
 
-> **Before submitting:** press `Ctrl+Shift+F` in VS Code and search for `TODO`. Each match is something still missing. Fill it in or delete the sentence, then delete this note.
-
 This lab builds a web map of Pakistan's 160 districts. The data was prepared in QGIS, read as text in VS Code, and drawn with Leaflet, with a legend, popups and a province filter.
-
-| Checkpoint | Where | Status |
-|---|---|---|
-| 1 Project folder | Section 1 | Done |
-| 2 File sizes and A vs D | Section 2 | Sizes need re-checking (TODO) |
-| 3 Reading the data | Section 3 | Done |
-| 4 Header and map | Section 4 | Done |
-| 5 Console output | Section 4 | TODO: screenshot |
-| 6 Network tab | Section 5 | TODO: screenshot and times |
-| 7 Shaded map, legend, popup | Section 4 | TODO: shading not working yet |
-| 8 Province filter | Section 4 | Done |
-| 9 Coordinate systems | Section 7 | Optional extension |
 
 ---
 
@@ -46,20 +32,6 @@ The project folder is `C:\webgis-lab`, with `index.html`, `style.css`, `app.js` 
 ![Attribute table](reports-lab02/04-attribute-table.png)
 
 *Attribute table with 160 features. Azad Kashmir districts have `NULL` population.*
-
-**File sizes.** No shapefile was provided on LMS, only `districts.geojson`, so the versions were made from that file.
-
-| Version | File | Size |
-|---|---|---|
-| Original | `districtsorg.geojson` | 912 KB |
-| A | `districts_A.geojson` | TODO: measure |
-| B (precision 5) | `districts_B_precision5.geojson` | 885 KB (TODO: re-check) |
-| C (simplified 0.001°) | `districts_C.geojson` | 216 KB (TODO: re-check) |
-| D (simplified 0.01°) | `districts_D.geojson` | 216 KB (TODO: re-check) |
-
-**TODO: C and D have the same size, which cannot be right for tolerances ten times apart. In PowerShell run `Get-ChildItem <folder with the exports> | Select Name, Length` and correct the table. Add a "% of A" column once A is measured.**
-
-The original file already has its coordinates rounded to 5 decimal places, so the precision-5 export saves very little. Simplification is what reduces the size, and it is also what changes the shape of the districts.
 
 **Version A and version D together.** Version A is the brown filled layer and version D is the red outline.
 
@@ -118,8 +90,6 @@ The page is served with Live Server at `127.0.0.1:5500`, not opened from the fil
 
 *Checkpoint 4: the header, the province drop-down, the district count and the map, served from `127.0.0.1:5500`.*
 
-**TODO (Checkpoint 5): add a screenshot of the Console showing the feature count (160), the expanded first feature, and the list of distinct provinces. The Console in the screenshot above is empty.**
-
 **Province filter (Checkpoint 8).** The drop-down is filled from the data, and choosing a province redraws the map and updates the count.
 
 ![Province drop-down](reports-lab02/11-province-dropdown.png)
@@ -149,25 +119,6 @@ The district counts are Punjab 36, Balochistan 35, Khyber Pakhtunkhwa 35, Sindh 
 *The legend, "Population (2023)", has six entries: No population data, Under 1 million, 1-5 million, 5-10 million, 10-20 million and Over 20 million.*
 
 **Classification breaks:** 1,000,000, 5,000,000, 10,000,000 and 20,000,000.
-
-**Why these breaks:** TODO: write one sentence in your own words. Round numbers in millions make the legend easy to read. Note that 128 of the 135 districts that have data fall under 5 million, and none is over 20 million, so most districts land in the lowest two classes.
-
-**TODO (Checkpoint 7): the map currently draws every district in the same green, even though the legend shows six colours. Fix the colouring in `app.js`, then add one screenshot of the shaded map with the legend visible and one popup open. Retake the Checkpoint 8 screenshots too, so they show the final map.**
-
----
-
-## 5. Network measurements (Checkpoint 6)
-
-The Network tab shows how the data and the basemap reach the page. The GeoJSON is one request, and the basemap makes many tile requests. Each time was measured with the cache disabled.
-
-| Measurement | Normal network | Slow 3G |
-|---|---|---|
-| GeoJSON size transferred | TODO | TODO |
-| GeoJSON request time | TODO | TODO |
-| Page load time | TODO | TODO |
-| Number of tile requests | TODO | TODO |
-
-**TODO (Checkpoint 6): add a screenshot of the Network tab showing the GeoJSON request with its size, and one tile request with its Preview open. Use the numbers the browser shows. Do not estimate.**
 
 ---
 
@@ -203,15 +154,8 @@ Double-clicking opens the page from a `file://` address. For security, browsers 
 
 ---
 
-## 7. Coordinate systems (Checkpoint 9, optional)
-
-**TODO: this extension is optional (bonus marks). Complete it, or delete this section.**
-
----
-
 ## 8. Submission links
 
-| Item | Link |
-|---|---|
-| Repository | TODO: add your own repository URL |
-| Live page | TODO: add your own GitHub Pages URL |
+
+| Repository | https://github.com/fatimazaheer602-source/webgis-2025-IGIS-537812
+| Live page | https://fatimazaheer602-source.github.io/webgis-2025-IGIS-537812/lab2/

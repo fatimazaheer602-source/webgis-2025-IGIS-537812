@@ -60,6 +60,3 @@ The count shows 14 districts but no circles. All 14 have no census value (`pop_2
 5. `map.off` finds the handler by matching the same function object passed to `map.on`. `showCoordinates` is a named function, so the same reference can be passed to both. An anonymous function has no reference to pass back.
 6. **25 km evacuation zone: `L.circle`** (radius in metres). It stays 25 km on the ground and grows as you zoom in (about 394 px wide at zoom 10). **Campus marker on a national map: `L.circleMarker`** (radius in pixels). It stays 6 px at every zoom, so it remains visible nationally instead of shrinking to a dot.
 
-## 8. Not done (needs the user)
-
-Part 10.1 (push and GitHub Pages) needs the user's repository, so it was not run. Commands from the manual: `git add -A`, `git commit -m "Lab 3: district dashboard"`, `git push`.

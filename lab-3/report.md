@@ -1,5 +1,8 @@
 # Web GIS Lab 3: District Dashboard
 
+- Live page: https://fatimazaheer602-source.github.io/webgis-2025-IGIS-537812/lab-3/
+- Repository: https://github.com/fatimazaheer602-source/webgis-2025-IGIS-537812
+
 ## 1. Checkpoint screenshots
 
 | # | Screenshot | Note |
@@ -59,4 +62,3 @@ The count shows 14 districts but no circles. All 14 have no census value (`pop_2
 4. In `overlayPane`, circles and polygons share a z-index, so draw order decides. Hovering calls `bringToFront()`, so the highlighted polygon would jump on top and **hide the circles** inside it (and block their tooltips) while hovered. The `symbols` pane (450) keeps circles above all polygons.
 5. `map.off` finds the handler by matching the same function object passed to `map.on`. `showCoordinates` is a named function, so the same reference can be passed to both. An anonymous function has no reference to pass back.
 6. **25 km evacuation zone: `L.circle`** (radius in metres). It stays 25 km on the ground and grows as you zoom in (about 394 px wide at zoom 10). **Campus marker on a national map: `L.circleMarker`** (radius in pixels). It stays 6 px at every zoom, so it remains visible nationally instead of shrinking to a dot.
-

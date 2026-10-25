@@ -272,4 +272,7 @@ Leaflet uses `[lat, lng]` in `setView([30.3753, 69.3451])`, in `maxBounds`, and 
 | Repository | https://github.com/fatimazaheer602-source/webgis-2025-IGIS-537812 |
 |---|---|
 | Lab 4 folder | https://github.com/fatimazaheer602-source/webgis-2025-IGIS-537812/tree/main/lab-4 |
-| Live page | None. This lab runs only on my own machine (GitHub Pages cannot run Python or a database). |
+| Live page (Lab 4) | None. GitHub Pages only serves files and cannot run Python or a database, so this lab runs only on my own machine. |
+| Live page (Lab 1) | https://fatimazaheer602-source.github.io/webgis-2025-IGIS-537812/lab-1/ |
+| Live page (Lab 2) | https://fatimazaheer602-source.github.io/webgis-2025-IGIS-537812/lab-2/ |
+| Live page (Lab 3) | https://fatimazaheer602-source.github.io/webgis-2025-IGIS-537812/lab-3/ |

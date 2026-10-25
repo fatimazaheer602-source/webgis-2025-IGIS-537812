@@ -7,4 +7,4 @@ Repository: https://github.com/fatimazaheer602-source/webgis-2025-IGIS-537812
 | 1 | First web map | https://fatimazaheer602-source.github.io/webgis-2025-IGIS-537812/lab-1/ | [lab-1](lab-1) |
 | 2 | District Explorer | https://fatimazaheer602-source.github.io/webgis-2025-IGIS-537812/lab-2/ | [lab-2](lab-2) |
 | 3 | District Dashboard | https://fatimazaheer602-source.github.io/webgis-2025-IGIS-537812/lab-3/ | [lab-3](lab-3) |
-| 4 | GeoDjango: Django, PostGIS, admin and Leaflet | No live page (runs only on a local machine, see [report](lab-4/report.md)) | [lab-4](lab-4) |
+| 4 | GeoDjango: Django, PostGIS, admin and Leaflet | http://127.0.0.1:8000 (local only, runs with `python manage.py runserver`; see [report](lab-4/report.md)) | [lab-4](lab-4) |

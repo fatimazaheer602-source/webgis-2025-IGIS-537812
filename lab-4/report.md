@@ -5,7 +5,7 @@
 **Reg no:** 537812  
 **Subject:** WebGIS
 
-This lab moves the 160 districts from Labs 2 and 3 into a PostGIS database. Django serves them as GeoJSON, they can be edited in the Django admin panel, and Leaflet draws them. The project runs only on my own machine, so there is no live page.
+This lab moves the 160 districts from Labs 2 and 3 into a PostGIS database. Django serves them as GeoJSON, they can be edited in the Django admin panel, and Leaflet draws them. The project runs on my own machine at http://127.0.0.1:8000, because GitHub Pages cannot run Python or a database.
 
 ---
 
@@ -272,7 +272,7 @@ Leaflet uses `[lat, lng]` in `setView([30.3753, 69.3451])`, in `maxBounds`, and 
 | Repository | https://github.com/fatimazaheer602-source/webgis-2025-IGIS-537812 |
 |---|---|
 | Lab 4 folder | https://github.com/fatimazaheer602-source/webgis-2025-IGIS-537812/tree/main/lab-4 |
-| Live page (Lab 4) | None. GitHub Pages only serves files and cannot run Python or a database, so this lab runs only on my own machine. |
+| Live page (Lab 4) | http://127.0.0.1:8000 (local; works only on my machine while `python manage.py runserver` is running) |
 | Live page (Lab 1) | https://fatimazaheer602-source.github.io/webgis-2025-IGIS-537812/lab-1/ |
 | Live page (Lab 2) | https://fatimazaheer602-source.github.io/webgis-2025-IGIS-537812/lab-2/ |
 | Live page (Lab 3) | https://fatimazaheer602-source.github.io/webgis-2025-IGIS-537812/lab-3/ |
